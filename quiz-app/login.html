@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Mobile Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body data-guest>
+  <header class="top-nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">Q</span>
+      <span>Mobile Quiz</span>
+    </a>
+    <nav class="nav-actions" aria-label="Main navigation">
+      <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      <a class="button button-ghost" href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="container auth-layout login-layout">
+    <section class="auth-panel">
+      <p class="eyebrow">Welcome back</p>
+      <h1>Login to continue learning</h1>
+      <p>Access quiz categories, take timed tests, and monitor your performance history.</p>
+    </section>
+
+    <section class="form-card" aria-labelledby="loginTitle">
+      <h2 id="loginTitle">User Login</h2>
+      <p class="form-help">Use the email and password you registered with.</p>
+      <div id="authMessage" class="alert hidden" role="status"></div>
+
+      <form id="loginForm" novalidate>
+        <label for="loginEmail">Email address</label>
+        <input id="loginEmail" name="email" type="email" autocomplete="email" required placeholder="student@example.com">
+
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" name="password" type="password" autocomplete="current-password" required placeholder="Enter password">
+
+        <button class="button button-primary full-width" type="submit">Login</button>
+      </form>
+
+      <p class="switch-link">New student? <a href="register.html">Create an account</a></p>
+    </section>
+  </main>
+
+  <script defer src="js/database.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/darkmode.js"></script>
+</body>
+</html>

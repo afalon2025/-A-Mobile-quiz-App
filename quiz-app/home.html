@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Mobile Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body data-protected>
+  <header class="top-nav">
+    <a class="brand" href="home.html">
+      <span class="brand-mark">Q</span>
+      <span>Mobile Quiz</span>
+    </a>
+    <nav class="nav-actions" aria-label="Main navigation">
+      <a class="button button-ghost" href="dashboard.html">Dashboard</a>
+      <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      <button class="button button-secondary" type="button" data-logout>Logout</button>
+    </nav>
+  </header>
+
+  <main class="container home-page">
+    <section class="welcome-card">
+      <p class="eyebrow">Learning dashboard</p>
+      <h1>Hello, <span id="currentUserName">Student</span></h1>
+      <p>Select a category, answer timed questions, and review your result immediately.</p>
+    </section>
+
+    <section class="section-heading">
+      <div>
+        <p class="eyebrow">Topics</p>
+        <h2>Quiz Categories</h2>
+      </div>
+      <a class="button button-ghost" href="dashboard.html">View performance</a>
+    </section>
+
+    <section id="categoryList" class="grid category-grid" aria-live="polite"></section>
+
+    <section class="card leaderboard-card">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">Competition</p>
+          <h2>Leaderboard</h2>
+        </div>
+      </div>
+      <div id="leaderboardList" class="leaderboard-list"></div>
+    </section>
+  </main>
+
+  <script defer src="js/database.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/quiz.js"></script>
+  <script defer src="js/darkmode.js"></script>
+</body>
+</html>

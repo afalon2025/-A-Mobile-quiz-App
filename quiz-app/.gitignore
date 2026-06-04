@@ -1,0 +1,7 @@
+node_modules/
+android/
+ios/
+dist/
+www/
+.DS_Store
+npm-debug.log*

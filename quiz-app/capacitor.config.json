@@ -1,0 +1,6 @@
+{
+  "appId": "com.cec418.mobilequiz",
+  "appName": "Mobile Quiz Application",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}

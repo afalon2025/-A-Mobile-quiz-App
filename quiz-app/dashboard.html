@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Dashboard | Mobile Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body data-protected>
+  <header class="top-nav">
+    <a class="brand" href="home.html">
+      <span class="brand-mark">Q</span>
+      <span>Mobile Quiz</span>
+    </a>
+    <nav class="nav-actions" aria-label="Main navigation">
+      <a class="button button-ghost" href="home.html">Home</a>
+      <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      <button class="button button-secondary" type="button" data-logout>Logout</button>
+    </nav>
+  </header>
+
+  <main class="container dashboard-page">
+    <section class="dashboard-hero">
+      <p class="eyebrow">Performance tracking</p>
+      <h1>Progress Dashboard</h1>
+      <p>Review your average score, best performance, category progress, and recent attempts.</p>
+    </section>
+
+    <section id="statCards" class="stat-grid" aria-live="polite"></section>
+
+    <section class="dashboard-grid">
+      <article class="card">
+        <h2>Category Performance</h2>
+        <div id="categoryPerformance" class="category-performance"></div>
+      </article>
+
+      <article class="card">
+        <h2>Top Learners</h2>
+        <div id="leaderboardRows" class="leaderboard-list"></div>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Recent Quiz Attempts</h2>
+      <div id="attemptHistory" class="attempt-history"></div>
+    </section>
+  </main>
+
+  <script defer src="js/database.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/dashboard.js"></script>
+  <script defer src="js/darkmode.js"></script>
+</body>
+</html>

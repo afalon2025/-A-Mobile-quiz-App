@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Quiz Application</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top-nav">
+    <a class="brand" href="index.html" aria-label="Mobile Quiz Application home">
+      <span class="brand-mark">Q</span>
+      <span>Mobile Quiz</span>
+    </a>
+    <nav class="nav-actions" aria-label="Main navigation">
+      <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      <a class="button button-ghost" href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container landing-page">
+    <section class="hero-card">
+      <p class="eyebrow">QUIZ APP</p>
+      <h1>Mobile-Based Quiz Application for Learning and Performance Tracking</h1>
+      <p class="hero-copy">
+        Practice topic-based quizzes, receive instant feedback, track scores, and review your learning progress offline.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="register.html">Create account</a>
+        <a class="button button-secondary" href="login.html">Sign in</a>
+      </div>
+    </section>
+
+    <section class="grid feature-grid" aria-label="Application features">
+      <article class="card">
+        <span class="feature-icon">01</span>
+        <h2>Interactive quizzes</h2>
+        <p>Answer multiple-choice questions with instant feedback after every question.</p>
+      </article>
+      <article class="card">
+        <span class="feature-icon">02</span>
+        <h2>Timed learning</h2>
+        <p>A countdown timer and progress bar help students manage quiz time.</p>
+      </article>
+      <article class="card">
+        <span class="feature-icon">03</span>
+        <h2>Performance tracking</h2>
+        <p>Each completed quiz is saved for dashboard analysis and improvement review.</p>
+      </article>
+    </section>
+  </main>
+
+  <script defer src="js/database.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/darkmode.js"></script>
+</body>
+</html>

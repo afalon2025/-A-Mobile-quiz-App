@@ -1,0 +1,24 @@
+{
+  "name": "mobile-quiz-application",
+  "version": "1.0.0",
+  "description": "Mobile Quiz Application for Learning and Performance Tracking",
+  "private": true,
+  "scripts": {
+    "serve": "http-server . -p 8080 -c-1",
+    "cap:sync": "cap sync",
+    "cap:add:android": "cap add android",
+    "cap:add:ios": "cap add ios",
+    "cap:open:android": "cap open android",
+    "cap:open:ios": "cap open ios"
+  },
+  "dependencies": {
+    "@capacitor-community/sqlite": "latest",
+    "@capacitor/core": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/android": "latest",
+    "@capacitor/cli": "latest",
+    "@capacitor/ios": "latest",
+    "http-server": "latest"
+  }
+}

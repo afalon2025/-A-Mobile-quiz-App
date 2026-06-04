@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Mobile Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body data-guest>
+  <header class="top-nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">Q</span>
+      <span>Mobile Quiz</span>
+    </a>
+    <nav class="nav-actions" aria-label="Main navigation">
+      <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      <a class="button button-ghost" href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container auth-layout register-layout">
+    <section class="auth-panel">
+      <p class="eyebrow">Start learning</p>
+      <h1>Create your quiz account</h1>
+      <p>Your account stores quiz scores locally so you can track improvement over time.</p>
+    </section>
+
+    <section class="form-card" aria-labelledby="registerTitle">
+      <h2 id="registerTitle">User Registration</h2>
+      <p class="form-help">Passwords are hashed before being stored locally.</p>
+      <div id="authMessage" class="alert hidden" role="status"></div>
+
+      <form id="registerForm" novalidate>
+        <label for="fullName">Full name</label>
+        <input id="fullName" name="fullName" type="text" autocomplete="name" required placeholder="Enter full name">
+
+        <label for="registerEmail">Email address</label>
+        <input id="registerEmail" name="email" type="email" autocomplete="email" required placeholder="student@example.com">
+
+        <label for="registerPassword">Password</label>
+        <input id="registerPassword" name="password" type="password" autocomplete="new-password" required minlength="6" placeholder="Minimum 6 characters">
+
+        <label for="confirmPassword">Confirm password</label>
+        <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required minlength="6" placeholder="Repeat password">
+
+        <button class="button button-primary full-width" type="submit">Create account</button>
+      </form>
+
+      <p class="switch-link">Already registered? <a href="login.html">Login here</a></p>
+    </section>
+  </main>
+
+  <script defer src="js/database.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/darkmode.js"></script>
+</body>
+</html>

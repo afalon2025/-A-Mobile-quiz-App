@@ -1,0 +1,33 @@
+.auth-layout {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+}
+
+.auth-panel {
+  padding: 1.5rem 0.2rem 0;
+}
+
+.register-layout .form-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.register-layout .form-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 0.35rem;
+  background: linear-gradient(90deg, #16a34a, var(--primary));
+}
+
+@media (min-width: 820px) {
+  .auth-layout {
+    grid-template-columns: 1fr minmax(380px, 460px);
+    min-height: calc(100vh - 8rem);
+  }
+
+  .auth-panel {
+    padding-top: 0;
+  }
+}

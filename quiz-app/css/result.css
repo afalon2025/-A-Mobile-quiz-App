@@ -1,0 +1,55 @@
+.result-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.score-ring {
+  display: grid;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto 1rem;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, var(--surface) 58%, transparent 59%),
+    conic-gradient(var(--primary) var(--score-angle), var(--surface-soft) 0);
+  border: 1px solid var(--border);
+}
+
+.score-ring strong {
+  font-size: 2.3rem;
+  letter-spacing: -0.05em;
+}
+
+.result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.answer-review {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.review-item {
+  padding: 1rem;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.review-item.correct {
+  border-color: color-mix(in srgb, var(--success) 45%, var(--border));
+}
+
+.review-item.incorrect {
+  border-color: color-mix(in srgb, var(--danger) 45%, var(--border));
+}
+
+.review-item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
